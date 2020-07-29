@@ -1,0 +1,134 @@
+<!-- <div>Some tags before</div> -->
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let data of users">
+        <div class="product-item">
+            <div class="pi-pic">
+                <img src="{{data.image}}" style="height: 400px;" alt="">
+                <div class="sale pp-sale">Sale</div>
+                <div class="icon">
+                    <i class="icon_heart_alt"></i>
+                </div>
+                <ul>
+                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="pi-text">
+                <div class="catagory-name">{{data.p_sname}}</div>
+                <a href="#">
+                    <h5>{{data.p_name}}</h5>
+                </a>
+                <div class="product-price">
+                    Rs{{data.price}}
+                    <span>{{data.discount}}</span>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- <ng-template carouselSlide>
+    <div class="product-item">
+      <div class="pi-pic">
+          <img src="assets/img/coat-5.webp" style="height: 400px;" alt="">
+          <div class="sale pp-sale">Sale</div>
+          <div class="icon">
+              <i class="icon_heart_alt"></i>
+          </div>
+          <ul>
+              <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+              <li class="quick-view"><a href="#">+ Quick View</a></li>
+              <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+          </ul>
+      </div>
+      <div class="pi-text">
+          <div class="catagory-name">Towel</div>
+          <a href="#">
+              <h5>Blazer Pant Jacket</h5>
+          </a>
+          <div class="product-price">
+              $14.00
+              <span>$35.00</span>
+          </div>
+      </div>
+  </div>
+  </ng-template> -->
+    <!-- <ng-template carouselSlide>
+    <div class="product-item">
+      <div class="pi-pic">
+          <img src="assets/img/pant-shirt.jpeg" style="height: 400px;" alt="">
+          <div class="sale pp-sale">Sale</div>
+          <div class="icon">
+              <i class="icon_heart_alt"></i>
+          </div>
+          <ul>
+              <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+              <li class="quick-view"><a href="#">+ Quick View</a></li>
+              <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+          </ul>
+      </div>
+      <div class="pi-text">
+          <div class="catagory-name">Towel</div>
+          <a href="#">
+              <h5>Pant Shirts</h5>
+          </a>
+          <div class="product-price">
+              $14.00
+              <span>$35.00</span>
+          </div>
+      </div>
+  </div>
+  </ng-template>
+  <ng-template carouselSlide>
+    <div class="product-item">
+      <div class="pi-pic">
+          <img src="assets/img/sherwani.jpeg" style="height: 400px;" alt="">
+          <div class="sale pp-sale">Sale</div>
+          <div class="icon">
+              <i class="icon_heart_alt"></i>
+          </div>
+          <ul>
+              <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+              <li class="quick-view"><a href="#">+ Quick View</a></li>
+              <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+          </ul>
+      </div>
+      <div class="pi-text">
+          <div class="catagory-name">Towel</div>
+          <a href="#">
+              <h5>Sherwani</h5>
+          </a>
+          <div class="product-price">
+              $14.00
+              <span>$35.00</span>
+          </div>
+      </div>
+  </div>
+  </ng-template> -->
+    <!-- <ng-template carouselSlide>
+    <div class="product-item">
+      <div class="pi-pic">
+          <img src="assets/img/mens-kurta-pajama.jpg" style="height: 400px;" alt="">
+          <div class="sale pp-sale">Sale</div>
+          <div class="icon">
+              <i class="icon_heart_alt"></i>
+          </div>
+          <ul>
+              <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+              <li class="quick-view"><a href="#">+ Quick View</a></li>
+              <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+          </ul>
+      </div>
+      <div class="pi-text">
+          <div class="catagory-name">Towel</div>
+          <a href="#">
+              <h5>Kurta Pajama</h5>
+          </a>
+          <div class="product-price">
+              $14.00
+              <span>$35.00</span>
+          </div>
+      </div>
+  </div>
+  </ng-template> -->
+</owl-carousel-o>
+<!-- <div>Some tags after</div> -->

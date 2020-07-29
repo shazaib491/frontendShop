@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-8 m-auto p-5  border">
+            <h4 class="text-center font-weight-bolder">Enter Your product Detail</h4>
+
+            <form [formGroup]="forms" (ngSubmit)="UpdateForm()">
+                <div class="form-group">
+                    <label for="">Product Name</label>
+                    <input type="text" name="p_name" id="" formControlName="p_name" [(ngModel)]="data.p_name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Product Subtitle Name</label>
+                    <input type="text" name="p_sname" formControlName="p_sname" [(ngModel)]="data.p_sname" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Discount</label>
+                    <input type="text" name="discount" formControlName="discount" [(ngModel)]="data.discount" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Price</label>
+                    <input type="text" name="price" id="" formControlName="price" [(ngModel)]="data.price" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Category</label>
+                    <select name="p_category" id="" formControlName="p_category" [(ngModel)]="data.p_category" class="form-control">
+        <option value="men">Men</option>
+        <option value="children">Children</option>
+      </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Image</label>
+                    <input type="file" (change)="uploadFile($event)" id="">
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
